@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Button from '../button';
 import {Link} from 'react-router-dom';
+import './tab-work.css';
 
 export default function Tab() {
   

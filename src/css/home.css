@@ -122,21 +122,21 @@
 
 
 /* work section */
-#work #filters {
+#filters {
     padding: 15px 0;
     text-align: center;
 }
-#work #filters .button {
+#filters li {
     cursor: pointer;
     display: inline-block;
     font-weight: bold;
     margin: 0 10px;
     text-transform: uppercase;
 }
-#work #filters .button:hover, #work #filters .button.active{
+#filters li:hover, #filters li.active{
     color:#e5342e;
 }
-#work .element-item .detail{
+.detail{
     -webkit-transition: 0.3s all ease-in-out;
     transition: 0.3s all ease-in-out;
     background-position: center;
@@ -146,7 +146,9 @@
     top: 0;
     width: 100%;
 }
-#work .element-item .detail :before{
+.detail:before{
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
     background: rgba(223, 68,60, 0.9);
     background-size: cover;
     content: "";
@@ -159,19 +161,25 @@
     width: 100%;
     /* z-index: 10; */
 }
-#work .element-item .detail :before:hover{
+.element-item:hover .detail:before{
     opacity: 1;
 }
-#work .element-item .detail h2{
+.detail h2{
+    -webkit-transition: 0.6s all ease-in-out;
+    transition: 0.6s all ease-in-out;
     color: #FFFFFF;
     font-size: 16px;
-    left: 50%;
+    font-weight: bold;
+    left:50%;
     opacity: 0;
     position: absolute;
     text-transform: uppercase;
+    transform: translate(-50%, -50%);
     top: 60%;
 }
-#work .element-item .detail a{
+.detail a{
+    -webkit-transition: 0.6s all ease-in-out 0.4s;
+    transition: 0.6s all ease-in-out 0.4s;
     border-color: #FFFFFF;
     color: #FFFFFF;
     font-weight: bold;
@@ -179,89 +187,96 @@
     opacity: 0;
     position: absolute;
     text-transform: uppercase;
+    transform: translate(-50%, -50%);
     top: 75%;
 }
-#work .element-item .detail a:hover{
+.detail a:hover{
     background: #FFFFFF;
     color: #e5342e;
 }
-#work .element-item .detail .corner-top :after{
-    border-right:3px solid #FFFFFF;
-    border-top:3px solid #FFFFFF;
-    content: "";
-    display: block;
-    height: 0px;
-    opacity: 0;
-    position: absolute;
-    right:20px;
-    top:20px;
-    width: 0px;
-}
-#work .element-item .detail .corner-top :before{
-    border-left:3px solid #FFFFFF;
-    border-top:3px solid #FFFFFF;
-    content: "";
-    display: block;
-    height: 0px;
-    left:20px;
-    opacity: 0;
-    position: absolute;
-    top:20px;
-    width: 0px;
-}
-#work .element-item .detail .corner-bottom :after{
-    border-right:3px solid #FFFFFF;
-    border-bottom:3px solid #FFFFFF;
-    content: "";
-    display: block;
-    height: 0px;
-    opacity: 0;
-    position: absolute;
-    right:20px;
-    bottom:20px;
-    width: 0px;
-}
-#work .element-item .detail .corner-bottom :before{
-    border-left:3px solid #FFFFFF;
-    border-bottom:3px solid #FFFFFF;
-    content: "";
-    display: block;
-    height: 0px;
-    left:20px;
-    opacity: 0;
-    position: absolute;
-    bottom:20px;
-    width: 0px;
-}
-
-#work .element-item .detail:hover .detail h2{
+.detail:hover h2{
     top: 50%;
     opacity: 1;
 }
-#work .element-item .detail:hover .detail a{
+.detail:hover a{
     top: 65%;
     opacity: 1;
 }
-#work .element-item .detail .corner-top:after:hover, #work .element-item .detail .corner-top:before:hover, #work .element-item .detail .corner-bottom:after,:hover #work .element-item .detail .corner-bottom:before:hover{
+.corner-top:after{
+    -webkit-transition: 0.5s all ease-in-out;
+    transition: 0.6s all ease-in-out;
+    border-right:3px solid #FFFFFF;
+    border-top:3px solid #FFFFFF;
+    content: "";
+    display: block;
+    height: 0px;
+    opacity: 0;
+    position: absolute;
+    right:20px;
+    top:20px;
+    width: 0px;
+}
+.corner-top:before{
+    -webkit-transition: 0.5s all ease-in-out;
+    transition: 0.6s all ease-in-out;
+    border-left:3px solid #FFFFFF;
+    border-top:3px solid #FFFFFF;
+    content: "";
+    display: block;
+    height: 0px;
+    left:20px;
+    opacity: 0;
+    position: absolute;
+    top:20px;
+    width: 0px;
+}
+.corner-bottom:after{
+    -webkit-transition: 0.5s all ease-in-out;
+    transition: 0.6s all ease-in-out;
+    border-right:3px solid #FFFFFF;
+    border-bottom:3px solid #FFFFFF;
+    content: "";
+    display: block;
+    height: 0px;
+    opacity: 0;
+    position: absolute;
+    right:20px;
+    bottom:20px;
+    width: 0px;
+}
+.corner-bottom:before{
+    -webkit-transition: 0.5s all ease-in-out;
+    transition: 0.6s all ease-in-out;
+    border-left:3px solid #FFFFFF;
+    border-bottom:3px solid #FFFFFF;
+    content: "";
+    display: block;
+    height: 0px;
+    left:20px;
+    opacity: 0;
+    position: absolute;
+    bottom:20px;
+    width: 0px;
+}
+.detail:hover .corner-top:after, .detail:hover .corner-top:before, .detail:hover .corner-bottom:before, .detail:hover .corner-bottom:after{
     height: 35px;
     opacity: 1;
     width: 35px;
-}
+} 
 
-#work .grid{
+.grid{
     position: relative;
     height: 911.511px;
 }
 /* clear fix */
-#work .grid :after{
+.grid :after{
     content: "";
     display: block;
     clear: both;
 }
 
 /* element-item */
-#work .element-item {
-    transition: 0.3s all ease-in-out;
+.element-item {
     background: #888;
     color: #262524;
     float: left;
@@ -270,11 +285,20 @@
     /* padding-bottom: 20%; */
     width: 25%;
 }
-#work .element-item > *{
+.element-item > *{
     margin:0;
     padding: 0;
 }
-#work .element-item .title{
+.element-item .name {
+    position: absolute;
+    left: 10px;
+    top: 60px;
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 12px;
+    font-weight: normal;
+}
+/* .element-item .title{
     font-size: 12px;
     font-weight: normal;
     left: 10px;
@@ -282,8 +306,8 @@
     position: absolute;
     text-transform: none;
     top: 60px;
-}
-#work .element-item .symbol {
+} */
+.element-item .symbol {
     position: absolute;
     left: 10px;
     top: 0px;
@@ -291,12 +315,12 @@
     font-weight: bold;
     color: white;
 }
-#work .element-item .number {
+.element-item .number {
     position: absolute;
     right: 8px;
     top: 5px;
 }
-#work .element-item .weight {
+.element-item .weight {
     position: absolute;
     left: 10px;
     top: 76px;

@@ -11,7 +11,7 @@ body {
   font-weight: 300;
 }
 
-ul, li, ol, Link {
+ul, li, ol, Link{
   list-style: none;
   text-decoration: none;
 }
@@ -79,4 +79,23 @@ h2.subtitle {
   margin-bottom: 0;
 }
 
-
+.catch-btn {
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  border: 2px solid #111517;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  color: #111517;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.catch-btn:hover {
+  background: #e5342e;
+  border-color: #e5342e;
+  color: #ffffff;
+}

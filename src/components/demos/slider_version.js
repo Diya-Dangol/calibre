@@ -5,8 +5,8 @@ import AboutBusiness from './about-business';
 import Featured from './featured';
 import Client from './client';
 import Team from './team';
-// import Work from './work';
-import Tab from './tab-work';
+import Work from './work';
+// import Tab from './tab-work';
 // import Isotope from './isotope';
 import Testimonial from './testimonial';
 import Footer from '../footer';
@@ -20,9 +20,9 @@ export default function SliderVersion() {
             <Featured />
             <Client />
             <Team />
-            {/* <Work /> */}
+            <Work />
             {/* <Isotope /> */}
-            <Tab />
+            {/* <Tab /> */}
             <Testimonial />
             <Footer />
         </>
