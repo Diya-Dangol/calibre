@@ -1,0 +1,37 @@
+button{
+  -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+  border: 2px solid #111517;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  color: #111517;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+button.light {
+  background: transparent;
+  border-color: #cecece;
+  color: #cecece;
+}
+
+button.white {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+button:hover {
+  background: #e5342e;
+  border-color: #e5342e;
+  color: #ffffff;
+}
+button.light:hover {
+  background: #cecece;
+  border-color: #cecece;
+  color: #e5342e;
+}
