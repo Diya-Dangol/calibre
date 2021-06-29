@@ -1,37 +1,38 @@
 import React from 'react';
-
 import OwlCarousel from 'react-owl-carousel';  
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css'; 
 
 export default function Testimonial() {
     return (
-        <div id="testimonials" className="slide-ver">
+        <div id="testimonials">
             <div className="head">
                 <h1 className="title"><span>Client's</span> Word</h1>
             </div>
             <div className="container">
-                <ul className="slider-version-testimonials">
-                    <OwlCarousel className="owl-theme" items="1" autoplay loop>
-                    {testimonialList.map((testimonial) => {
-                        const {id, img, paragraph, author} = testimonial;
-                        return(
-                            <div key={id} className="item">
-                                <li>
-                                    <figure>
-                                        <img src={img} alt="" />
-                                    </figure>
-                                    <div className="content">
-                                        <p>{paragraph}</p>
-                                        <span className="author">{author} </span>
-                                    </div>
-                                </li>
-                            </div>
-                        )
-                    })}
-                </OwlCarousel>  
-                    
-                </ul>
+                <div className="testimonial-slider">
+                    <img src="img/iphone.png" alt="" className="iphone-graphics" />
+                    <ul>
+                        <OwlCarousel className="owl-theme" items="3" autoplay center autoplayHoverPause loop>
+                        {testimonialList.map((testimonial) => {
+                            const {id, img, paragraph, author} = testimonial;
+                            return(
+                                <div key={id} className="item">
+                                    <li>
+                                        <figure>
+                                            <img src={img} alt="" />
+                                        </figure>
+                                        <div className="content">
+                                            <p>{paragraph}</p>
+                                            <span className="author">{author} </span>
+                                        </div>
+                                    </li>
+                                </div>
+                            )
+                        })}
+                    </OwlCarousel>  
+                    </ul>
+                </div>
             </div>
         </div>
     )

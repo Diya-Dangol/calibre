@@ -9,15 +9,19 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-isotope": "^1.0.7",
+    "react-player": "^2.9.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "copyImage": "ncp src/img/ public/img/",
+    "copyVendor": "ncp src/vendor public/vendor",
+    "copyVideo": "ncp src/videos public/videos",
+    "start": "npm run copyVideo && npm run copyVendor && npm run copyImage && react-scripts start",
+    "build": "npm run copyImage && react-scripts build",
+    "test": "npm run copyImage && react-scripts test",
+    "eject": "npm run copyImage && react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -39,8 +43,13 @@
   },
   "devDependencies": {
     "bootstrap": "^4.6.0",
+    "copy-webpack-plugin": "^9.0.1",
+    "file-loader": "^6.2.0",
+    "ncp": "^2.0.0",
     "react-bootstrap": "^1.6.1",
     "react-owl-carousel": "^2.3.3",
-    "react-router-hash-link": "^2.4.3"
+    "react-router-hash-link": "^2.4.3",
+    "url-loader": "^4.1.1",
+    "webpack": "4.44.2"
   }
 }

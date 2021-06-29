@@ -53,7 +53,7 @@ export default function Navbar() {
                                 <Links smooth to="#clients" className="nav-link">clients</Links>
                             </li>
                             <li className="nav-item ml-1">
-                                <Links smooth to="#contact" className="nav-link">Contact</Links>
+                                <Links smooth to="#contact-detail" className="nav-link">Contact</Links>
                             </li>
                         </ul>
                     </div>

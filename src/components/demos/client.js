@@ -8,7 +8,7 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 export default function Client() {
     return (
         <div id="clients">
-            <OwlCarousel className="owl-theme" items="6" autoplay loop>
+            <OwlCarousel className="owl-theme" items="6" autoplay autoplayHoverPause loop>
                 {clientList.map((client) => {
                     const {id, img, alt} = client;
                     return(

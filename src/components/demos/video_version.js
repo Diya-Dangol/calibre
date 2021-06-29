@@ -1,9 +1,28 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../Navbar';
+import Video from './video';
+import AboutVideo from './about-video';
+import VideoFeatured from './video-featured';
+import Client from './client';
+import Team from './team';
+import Work from './work';
+import Testimonial from './testimonial';
+import Footer from '../footer';
 
-export default function VideoVersion() {
+export default function ParallexVersion() {
     return (
-        <div>
-            videoVersion
-        </div>
+        <>
+            <Navbar />
+            <div role="main" class="homepage main">
+                <Video />
+                <AboutVideo />
+                <VideoFeatured />
+                <Client />
+                <Team />
+                <Work />
+                <Testimonial />
+            </div>
+            <Footer />
+        </>
     )
 }

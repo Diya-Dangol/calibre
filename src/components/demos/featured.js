@@ -11,7 +11,7 @@ const features=[
     },
     {
         id: 2,
-        img: 'img/featured_01.jpg',
+        img: 'img/featured_02.jpg',
         title: "Sub-Pivot stands out",
         subtitle:'Here is a large, attention Temparibus aut seeking feature box',
         paragraph: " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce elementum, nulla vel pellentesque consequat, ante nulla hendrerit arcu, ac tincidunt mauris lacus sed leo.vamus suscipit molestie vestibulum. "
@@ -21,7 +21,7 @@ const features=[
 
 export default function Featured() {
     return (
-        <div id="featured" className="container-fluid col-12 row"> 
+        <div id="featured" className="row ml-0"> 
             {features.map((feature,i) => {
                 const {id, img, title, subtitle, paragraph} = feature;
                 return(

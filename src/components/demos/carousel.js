@@ -6,11 +6,11 @@ import Button from '../button';
 export default function Carousel() {
     return (
         <div>
-            <div id="slides" className="carousel slide" data-ride="carousel">
+            <div id="slider-container" className="carousel slide" data-ride="carousel">
                 <ul className="carousel-indicators">
-                    <li data-target="#slides" data-slide-to="0" className="active"></li>
-                    <li data-target="#slides" data-slide-to="1"></li>
-                    <li data-target="#slides" data-slide-to="2"></li>
+                    <li data-target="#slider-container" data-slide-to="0" className="active"></li>
+                    <li data-target="#slider-container" data-slide-to="1"></li>
+                    <li data-target="#slider-container" data-slide-to="2"></li>
                 </ul>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -51,11 +51,11 @@ export default function Carousel() {
                         </div>
                     </div>
                 </div>
-                <Link className="carousel-control-prev" to="#slides" role="button" data-slide="prev">
+                <Link className="carousel-control-prev" to="#slider-container" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </Link>
-                <Link className="carousel-control-next" to="#slides" role="button" data-slide="next">
+                <Link className="carousel-control-next" to="#slider-container" role="button" data-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                 </Link>

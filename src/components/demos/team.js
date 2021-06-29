@@ -23,7 +23,7 @@ export default function Team() {
             </div>
 
             <div className="team-listing">
-                <OwlCarousel className="owl-theme" items="5" autoplay nav loop>
+                <OwlCarousel className="owl-theme" items="5" autoplayHoverPause autoplay dots nav loop>
                     <div className="item">
                         <figure>
                             <img src="img/team/team_member_01.jpg" alt="" />

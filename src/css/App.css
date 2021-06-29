@@ -80,8 +80,8 @@ h2.subtitle {
 }
 
 .catch-btn {
-  -webkit-transition: 0.3s all ease-in-out;
-  transition: 0.3s all ease-in-out;
+  /* -webkit-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out; */
   border: 2px solid #111517;
   -webkit-border-radius: 50px;
   border-radius: 50px;
