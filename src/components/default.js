@@ -33,9 +33,9 @@ export default function Home() {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ml-auto">
                                 <li className="nav-item dropdown">
-                                    <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <Links smooth to="#demos" className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Demos
-                                    </Link>
+                                    </Links>
                                     <div className="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <Link className="dropdown-item pt-o pb-0" to="/parallax_version">Parallax_version</Link>
                                     <div className="dropdown-divider"></div>
