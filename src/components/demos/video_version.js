@@ -13,7 +13,7 @@ export default function ParallexVersion() {
     return (
         <>
             <Navbar />
-            <div role="main" class="homepage main">
+            <div role="main" className="homepage main">
                 <Video />
                 <AboutVideo />
                 <VideoFeatured />

@@ -1,26 +1,59 @@
-import React, {useState, useEffect} from 'react';
-import SliderTestimonial from './slider-testimonial';
-import PhoneViewTestimonial from './phone-view-testimonial';
+import React from 'react';
+import OwlCarousel from 'react-owl-carousel';  
+import 'owl.carousel/dist/assets/owl.carousel.css';  
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
+const options ={
+    responsive:{
+        0:{
+            items: 1,
+            dots: false,
+        },
+        600:{
+            items: 1,
+            dots: false,
+        },
+        1000:{
+            items: 3,
+            dots: false,
+        },
+    },
+}
 
-export default function Testimonial() {
-    const [size, setSize] = useState(true);
+// useEffect(() =>{options},[])
 
-    const showHideImage = () =>{
-        if(window.innerwidth >= 400){
-            setSize(true)
-        }else{
-            setSize(false);
-
-        }
-    }
-    useEffect(() => {
-        window.addEventListener('resize', showHideImage);
-    },[]);
+export default function PhoneViewTestimonial() {
     
     return (
-        <div>
-            {size ? <PhoneViewTestimonial /> : <SliderTestimonial />}
+        <div id="testimonials">
+            <div className="head">
+                <h1 className="title"><span>Client's</span> Word</h1>
+            </div>
+            <div className="container">
+                <div className= "testimonial-slider">
+                    <img src="img/iphone.png" alt="" className="iphone-graphics" /> 
+                    <ul>
+                        <OwlCarousel className="owl-theme" {...options} autoplay center autoplayHoverPause loop>
+                        {testimonialList.map((testimonial) => {
+                            const {id, img, paragraph, author} = testimonial;
+                            return(
+                                <div key={id} className="item">
+                                    <li>
+                                        <figure>
+                                            <img src={img} alt="" />
+                                        </figure>
+                                        <div className="content">
+                                            <p>{paragraph}</p>
+                                            <span className="author">{author} </span>
+                                        </div>
+                                    </li>
+                                </div>
+                            )
+                        })}
+                    </OwlCarousel>  
+                    </ul>
+                </div>
+            </div>
         </div>
     )
 }

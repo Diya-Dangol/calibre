@@ -1,6 +1,6 @@
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import './css/App.css';
-import Home from './components/home';
+import './css/Global.css';
+import Home from './components/default';
 import SliderVersion from './components/demos/slider_version';
 import ParallaxVersion from './components/demos/parallax_version';
 import VideoVersion from './components/demos/video_version';

@@ -1,0 +1,161 @@
+.default_page {
+    background-image: url(../img/landingpage.jpg);
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+.default_page .text{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.default_page .text h1{
+    color: #e5342e;
+    font-size: 100px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.default_page .text h2{
+    color: #e5342e;
+}
+
+.listings {
+    padding: 100px 0;
+    text-align: center;
+}
+.listings .col{
+    margin: 0 25px;
+    padding: 0;
+}
+.listings .col figure{
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    border: 8px solid #FFFFFF;
+    -webkit-box-shadow: 1px 1px 7px rgba(0, 0, 0, 9%);
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 9%);
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.listings .col figure img{
+    -webkit-transition: 2s all ease-in-out;
+    transition: 2s all ease-in-out;
+}
+.listings .call-to-action{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.listings .col:hover figure img{
+    -webkit-transform: trannslate(0, -60%);
+    transform: translate(0, -60%);
+}
+.call-to-action {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.call-to-action a{
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.call-to-action .col {
+    -webkit-transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-in-out;
+    background: #303030;
+    border: 1px solid #fff;
+    border-right: none;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+    margin: 0;
+    opacity: 0.8;
+}
+.call-to-action .col a{
+    color: #FFFFFF;
+}
+.call-to-action .col.demo {
+    border-left: none;
+}
+.call-to-action .col:hover{
+    background: #e5342e;
+    box-shadow: 0 0 25px rgba(0,0,0,0.2);
+    opacity: 1;
+}
+.call-to-action .col:hover a {
+    /* background: #e5342e; */
+    color: #ffffff;
+    text-decoration: none;
+}
+/* .listings .col:hover a {
+    color: #e5342e;
+} */
+.listings .col h4{
+    font-size: 22px;
+    font-weight: normal;
+    margin: 30px 0 0 0;
+}
+/* .listings .col a{
+    color: #767676;
+} */
+
+/*  other features */
+.features {
+    background: #f2f2f2;
+    margin-bottom: 10px;
+    padding: 100px 0;
+    text-align: center;
+}
+.features .col {
+    margin-bottom: 35px;
+}
+.features .col i{
+    background: #e5342e;
+    border-radius: 50%;
+    color: #FFFFFF;
+    font-size: 30px;
+    height: 80px;
+    line-height: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 80px;
+}
+.features .col h5{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px){
+    .default_page .text h1{
+      font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .default_page{
+    height: 60vh;
+    }
+} 
+@media screen and (max-width: 576px){
+    .default_page .text{
+        width: 90%;
+    }    
+} 
+@media screen and (max-width: 576px){
+    .default_page .text h2{
+        font-size: 24px
+    }
+} 
+
+@media screen and (max-width: 480px){
+    .default_page .text h1{
+        font-size: 40px;
+    }
+} 

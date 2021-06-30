@@ -5,10 +5,27 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';  
 import 'owl.carousel/dist/assets/owl.theme.default.css'; 
 
+const options ={
+    responsive:{
+        0:{
+            items: 1,
+            dots: false,
+        },
+        600:{
+            items: 3,
+            dots: false,
+        },
+        1000:{
+            items: 5,
+            dots: false,
+        },
+    },
+}
+
 export default function Client() {
     return (
         <div id="clients">
-            <OwlCarousel className="owl-theme" items="6" autoplay autoplayHoverPause loop>
+            <OwlCarousel className="owl-theme" {...options} autoplay autoplayHoverPause loop>
                 {clientList.map((client) => {
                     const {id, img, alt} = client;
                     return(

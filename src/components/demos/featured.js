@@ -39,35 +39,3 @@ export default function Featured() {
         </div>
     )
 }
-// export default function Featured() {
-//     return (
-//         <div id="featured" className="col-12 row">           
-//             {features.map((feature) => {
-//                 const {id, img, title, subtitle, paragraph} = feature;
-//                 return(
-//                     <aside key={id} className="text-white col-md-6">
-//                         <img src={img} alt="" />
-//                         <heading>
-//                             <h6>{title}</h6>
-//                             <span>{subtitle} </span>
-//                             <p>{paragraph} </p>
-//                         </heading>
-//                     </aside>
-//                 )
-//             })}
-//         </div>
-//     )
-// }
-
-// const Feature = (props) => {
-//     const  {img, title, subtitle, paragraph} = props.feature;
-
-//     return(
-//         <aside className="col-md-6">
-//             <img src={img} alt="" />
-//             <h6>{title}</h6>
-//             <span>{subtitle} </span>
-//             <p>{paragraph} </p>
-//         </aside>
-//     )
-// }

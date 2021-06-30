@@ -99,3 +99,6 @@ h2.subtitle {
   border-color: #e5342e;
   color: #ffffff;
 }
+.catch-btn:hover a{
+  text-decoration: none;;
+}

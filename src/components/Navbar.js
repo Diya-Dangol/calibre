@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import '../css/navbar.css';
 
@@ -15,7 +15,9 @@ export default function Navbar() {
         }
     }
 
-    window.addEventListener('scroll', changeBackground);
+    useEffect(() =>{
+        window.addEventListener('scroll', changeBackground);
+    },[])
     
     return (
         <header id="header">
