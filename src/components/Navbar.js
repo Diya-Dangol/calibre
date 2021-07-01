@@ -17,6 +17,10 @@ export default function Navbar() {
 
     useEffect(() =>{
         window.addEventListener('scroll', changeBackground);
+
+        return () => { //this code is executed when we leave the page
+            window.removeEventListener('scroll', changeBackground);
+        }
     },[])
     
     return (
